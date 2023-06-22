@@ -1,0 +1,82 @@
+[
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-pngs-12:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\layout_main_activity.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\layout_fragment_two.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\layout\\fragment_two.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\font_pt_sans.ttf.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\font\\pt_sans.ttf"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\layout_main_fragment.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\layout\\main_fragment.xml"
+    },
+    {
+        "merged": "com.google.mlkit.codelab.translate.app-merged_res-17:/layout_main_fragment.xml.flat",
+        "source": "com.google.mlkit.codelab.translate.app-main-19:/layout/main_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\drawable_greyscale_regular_3x.png.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\drawable\\greyscale_regular_3x.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-merged_res-17:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\daemon\\7.3.3\\com.google.mlkit.codelab.translate.app-main-19:\\drawable\\ic_launcher_background.xml"
+    }
+]

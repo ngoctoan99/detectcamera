@@ -1,0 +1,212 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2019 Google Inc. All Rights Reserved.
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~ http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~  Unless required by applicable law or agreed to in writing, software
+12  ~  distributed under the License is distributed on an "AS IS" BASIS,
+13  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~  See the License for the specific language governing permissions and
+15  ~  limitations under the License.
+16  ~
+17-->
+18<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+19    package="com.google.mlkit.codelab.translate"
+20    android:versionCode="1"
+21    android:versionName="1.0" >
+22
+23    <uses-sdk
+24        android:minSdkVersion="21"
+24-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml
+25        android:targetSdkVersion="33" />
+25-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml
+26
+27    <uses-feature android:name="android.hardware.camera.any" />
+27-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:22:5-64
+27-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:22:19-61
+28
+29    <uses-permission android:name="android.permission.CAMERA" />
+29-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:23:5-65
+29-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:23:22-62
+30    <uses-permission
+30-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:24:5-25:37
+31        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+31-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:24:22-78
+32        android:maxSdkVersion="28" />
+32-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:25:9-35
+33
+34    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+35    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+36-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:25:5-79
+36-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:25:22-76
+37    <uses-permission android:name="android.permission.INTERNET" />
+37-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:26:5-67
+37-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:26:22-64
+38
+39    <application
+39-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:28:5-47:19
+40        android:allowBackup="true"
+40-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:29:9-35
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.3.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\665d557196735d9ad88c831292af534d\transformed\core-1.3.0\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+43        android:icon="@mipmap/ic_launcher"
+43-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:30:9-43
+44        android:label="@string/app_name"
+44-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:31:9-41
+45        android:roundIcon="@mipmap/ic_launcher_round"
+45-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:32:9-54
+46        android:supportsRtl="true"
+46-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:33:9-35
+47        android:testOnly="true"
+48        android:theme="@style/AppTheme" >
+48-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:34:9-40
+49        <activity
+49-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:35:9-42:20
+50            android:name="com.google.mlkit.codelab.translate.MainActivity"
+50-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:35:19-47
+51            android:exported="true"
+51-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:36:13-36
+52            android:screenOrientation="portrait" >
+52-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:35:48-84
+53            <intent-filter>
+53-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:37:13-41:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:38:17-69
+54-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:38:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:40:17-77
+56-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:40:27-74
+57            </intent-filter>
+58        </activity>
+59        <!-- Automatically download the text recognition model after app install -->
+60        <meta-data
+60-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:44:9-46:35
+61            android:name="com.google.ml.vision.DEPENDENCIES"
+61-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:45:13-61
+62            android:value="ocr" />
+62-->D:\scantranslate\codelab-mlkit-android-master\translate\starter\app\src\main\AndroidManifest.xml:46:13-32
+63
+64        <service
+64-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:9:9-15:19
+65            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+65-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:10:13-91
+66            android:directBootAware="true"
+66-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:17:13-43
+67            android:exported="false" >
+67-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:11:13-37
+68            <meta-data
+68-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:12:13-14:85
+69                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+69-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:13:17-114
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.android.gms:play-services-mlkit-text-recognition:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\89e174e98ae1f8b0c08bbb924a826e05\transformed\jetified-play-services-mlkit-text-recognition-16.0.0\AndroidManifest.xml:14:17-82
+71            <meta-data
+71-->[com.google.mlkit:language-id:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\66bc9a0452b0a1645d022386082a3bf1\transformed\jetified-language-id-16.0.0\AndroidManifest.xml:11:13-13:85
+72                android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.LanguageIdRegistrar"
+72-->[com.google.mlkit:language-id:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\66bc9a0452b0a1645d022386082a3bf1\transformed\jetified-language-id-16.0.0\AndroidManifest.xml:12:17-113
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.mlkit:language-id:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\66bc9a0452b0a1645d022386082a3bf1\transformed\jetified-language-id-16.0.0\AndroidManifest.xml:13:17-82
+74            <meta-data
+74-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:11:13-13:85
+75                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.NaturalLanguageTranslateRegistrar"
+75-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:12:17-126
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:13:17-82
+77            <meta-data
+77-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:14:13-16:85
+78                android:name="com.google.firebase.components:com.google.mlkit.nl.translate.RemoteConfigRegistrar"
+78-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:15:17-114
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.mlkit:translate:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\3a7a1c9ca5aea7e32f2671519e3ba2c0\transformed\jetified-translate-16.0.0\AndroidManifest.xml:16:17-82
+80            <meta-data
+80-->[com.google.mlkit:vision-common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\c9314d0d78eb87fe8361ee45f9c411a6\transformed\jetified-vision-common-16.0.0\AndroidManifest.xml:12:13-14:85
+81                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+81-->[com.google.mlkit:vision-common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\c9314d0d78eb87fe8361ee45f9c411a6\transformed\jetified-vision-common-16.0.0\AndroidManifest.xml:13:17-124
+82                android:value="com.google.firebase.components.ComponentRegistrar" />
+82-->[com.google.mlkit:vision-common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\c9314d0d78eb87fe8361ee45f9c411a6\transformed\jetified-vision-common-16.0.0\AndroidManifest.xml:14:17-82
+83            <meta-data
+83-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:20:13-22:85
+84                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+84-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:21:17-120
+85                android:value="com.google.firebase.components.ComponentRegistrar" />
+85-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:22:17-82
+86        </service>
+87
+88        <provider
+88-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:9:9-13:38
+89            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+89-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:10:13-78
+90            android:authorities="com.google.mlkit.codelab.translate.mlkitinitprovider"
+90-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:11:13-69
+91            android:exported="false"
+91-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:12:13-37
+92            android:initOrder="99" />
+92-->[com.google.mlkit:common:16.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\75e28e6a263d8053e2dc54125dd77cf1\transformed\jetified-common-16.0.0\AndroidManifest.xml:13:13-35
+93
+94        <activity
+94-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\f454ccf0f42eb0f5a3cbecd47e39c02d\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+95            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+95-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\f454ccf0f42eb0f5a3cbecd47e39c02d\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+96            android:exported="false"
+96-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\f454ccf0f42eb0f5a3cbecd47e39c02d\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+97            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\f454ccf0f42eb0f5a3cbecd47e39c02d\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+98
+99        <meta-data
+99-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\dde09fc3e223f80a9ccc430495a6a717\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+100            android:name="com.google.android.gms.version"
+100-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\dde09fc3e223f80a9ccc430495a6a717\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+101            android:value="@integer/google_play_services_version" />
+101-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\dde09fc3e223f80a9ccc430495a6a717\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+102
+103        <provider
+103-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\59157dec70ca58c0bc97360b5b53de11\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+104            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+104-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\59157dec70ca58c0bc97360b5b53de11\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+105            android:authorities="com.google.mlkit.codelab.translate.lifecycle-process"
+105-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\59157dec70ca58c0bc97360b5b53de11\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+106            android:exported="false"
+106-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\59157dec70ca58c0bc97360b5b53de11\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+107            android:multiprocess="true" />
+107-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\59157dec70ca58c0bc97360b5b53de11\transformed\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+108
+109        <service
+109-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:29:9-35:19
+110            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+110-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:30:13-103
+111            android:exported="false" >
+111-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:31:13-37
+112            <meta-data
+112-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:32:13-34:39
+113                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+113-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:33:17-94
+114                android:value="cct" />
+114-->[com.google.android.datatransport:transport-backend-cct:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\26fdb5408b0d84ef39f1205360f88bcd\transformed\jetified-transport-backend-cct-2.2.2\AndroidManifest.xml:34:17-36
+115        </service>
+116        <service
+116-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:26:9-30:19
+117            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+117-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:27:13-117
+118            android:exported="false"
+118-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:28:13-37
+119            android:permission="android.permission.BIND_JOB_SERVICE" >
+119-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:29:13-69
+120        </service>
+121
+122        <receiver
+122-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:32:9-34:40
+123            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+123-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:33:13-132
+124            android:exported="false" />
+124-->[com.google.android.datatransport:transport-runtime:2.2.2] C:\Users\USER\AppData\Local\Android\Sdk\ndk\23.1.7779620\caches\transforms-3\4c56e56c35c337f04be9015d88a10648\transformed\jetified-transport-runtime-2.2.2\AndroidManifest.xml:34:13-37
+125    </application>
+126
+127</manifest>
