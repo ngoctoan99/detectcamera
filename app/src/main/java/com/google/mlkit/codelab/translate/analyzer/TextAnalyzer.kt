@@ -49,11 +49,6 @@ class TextAnalyzer(
 
     // TODO: Instantiate TextRecognition detector
     private val detector = TextRecognition.getClient()
-    private var mSelectedImage: Bitmap? = null
-    private var mImageMaxWidth: Int? = null
-
-    // Max height (portrait mode)
-    private var mImageMaxHeight: Int? = null
     init {
         lifecycle.addObserver(detector)
     }
@@ -70,6 +65,8 @@ class TextAnalyzer(
         // know how to appropriately crop the image we want to analyze.
         val imageHeight = mediaImage.height
         val imageWidth = mediaImage.width
+
+        Log.d("toantest","$imageHeight // $imageWidth")
 
         val actualAspectRatio = imageWidth / imageHeight
 
@@ -99,14 +96,14 @@ class TextAnalyzer(
         }
 
         cropRect.inset(
-            (imageWidth * widthCrop / 2).toInt(),
+            (imageWidth * widthCrop / 2 ).toInt(),
             (imageHeight * heightCrop / 2).toInt()
         )
+
         val croppedBitmap =
             ImageUtils.rotateAndCrop(convertImageToBitmap, rotationDegrees, cropRect)
-        val bitmapResize = processCaculatorWidthHeightFromBitmap(cropPercentages,croppedBitmap)
         // TODO call recognizeText() once implemented
-        recognizeText(InputImage.fromBitmap(bitmapResize, 0)).addOnCompleteListener {
+        recognizeText(InputImage.fromBitmap(croppedBitmap, 0)).addOnCompleteListener {
             imageProxy.close()
         }
     }
@@ -152,31 +149,7 @@ class TextAnalyzer(
 
 
     //////////////////
-    private fun processCaculatorWidthHeightFromBitmap(
-        cropPercentages: Pair<Int, Int>,
-        croppedBitmap: Bitmap
-    ):Bitmap{
-        // Get the dimensions of the View
-        val targetWidth = cropPercentages.first
-        val maxHeight = cropPercentages.second
 
-        // Determine how much to scale down the image
-
-        // Determine how much to scale down the image
-        val scaleFactor = Math.max(
-            croppedBitmap!!.width.toFloat() / targetWidth.toFloat(),
-            croppedBitmap!!.height.toFloat() / maxHeight.toFloat()
-        )
-
-        val resizedBitmap = Bitmap.createScaledBitmap(
-            croppedBitmap!!,
-            (croppedBitmap!!.width / scaleFactor).toInt(),
-            (croppedBitmap!!.height / scaleFactor).toInt(),
-            true
-        )
-//        croppedBitmap = resizedBitmap
-        return resizedBitmap
-    }
 
     private fun getErrorMessage(exception: Exception): String? {
         val mlKitException = exception as? MlKitException ?: return exception.message

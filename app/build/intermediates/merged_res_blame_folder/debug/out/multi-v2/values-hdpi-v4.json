@@ -4,7 +4,7 @@
             "outputFile": "com.google.mlkit.codelab.translate.app-mergeDebugResources-15:/values-hdpi-v4/values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\caches\\transforms-3\\454c72706089b43ae04dfeb4f2a0e4fa\\transformed\\appcompat-1.1.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "/home/quanle/.gradle/caches/transforms-3/454c72706089b43ae04dfeb4f2a0e4fa/transformed/appcompat-1.1.0/res/values-hdpi-v4/values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

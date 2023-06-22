@@ -42,8 +42,8 @@
         app:layout_constraintTop_toTopOf="@id/viewfinder" />
     <com.google.mlkit.codelab.translate.graphic.GraphicOverlay
         android:id="@+id/graphicoverlay"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         app:layout_constraintTop_toTopOf="@id/overlay"
         app:layout_constraintBottom_toBottomOf="@id/overlay"
         app:layout_constraintLeft_toLeftOf="@id/overlay"

@@ -40,9 +40,9 @@ class TextGraphic internal constructor(
 
     init {
         rectPaint.color = FRAME_COLOR
-        rectPaint.style = Paint.Style.STROKE
-//        rectPaint.style = Paint.Style.FILL
-        rectPaint.strokeWidth = STROKE_WIDTH
+//        rectPaint.style = Paint.Style.STROKE
+        rectPaint.style = Paint.Style.FILL
+//        rectPaint.strokeWidth = STROKE_WIDTH
         textPaint = Paint()
         textPaint.color = TEXT_COLOR
         textPaint.textSize = TEXT_SIZE
@@ -69,7 +69,7 @@ class TextGraphic internal constructor(
         private const val TAG = "TextGraphic"
         private const val TEXT_COLOR = Color.BLACK
         private const val FRAME_COLOR = Color.WHITE
-        private const val TEXT_SIZE = 25.0f
+        private const val TEXT_SIZE = 30.0f
         private const val STROKE_WIDTH = 1.0f
     }
 

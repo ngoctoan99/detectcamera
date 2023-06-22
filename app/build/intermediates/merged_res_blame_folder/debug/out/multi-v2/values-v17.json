@@ -4,7 +4,7 @@
             "outputFile": "com.google.mlkit.codelab.translate.app-mergeDebugResources-15:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\USER\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\caches\\transforms-3\\454c72706089b43ae04dfeb4f2a0e4fa\\transformed\\appcompat-1.1.0\\res\\values-v17\\values-v17.xml",
+                    "source": "/home/quanle/.gradle/caches/transforms-3/454c72706089b43ae04dfeb4f2a0e4fa/transformed/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

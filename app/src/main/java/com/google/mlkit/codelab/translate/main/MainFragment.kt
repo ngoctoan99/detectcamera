@@ -77,7 +77,8 @@ class MainFragment : Fragment() {
         // to avoid analyze the entire image from the live camera feed.
         const val DESIRED_WIDTH_CROP_PERCENT = 50
         const val DESIRED_HEIGHT_CROP_PERCENT = 70
-
+        private var imageSizeWidth =  0
+        private var imageSizeHeight =  0
         // This is an arbitrary number we are using to keep tab of the permission
         // request. Where an app has multiple context for requesting permission,
         // this can help differentiate the different contexts
@@ -94,6 +95,10 @@ class MainFragment : Fragment() {
         private const val RATIO_4_3_VALUE = 4.0 / 3.0
         private const val RATIO_16_9_VALUE = 16.0 / 9.0
         private const val TAG = "MainFragment"
+        private var rectTop :Float ?= 0f
+        private var rectLeft :Float ?= 0f
+        private var rectRight :Float ?= 0f
+        private var rectBottom:Float ?= 0f
     }
 
     private var displayId: Int = -1
@@ -247,7 +252,8 @@ class MainFragment : Fragment() {
         // Get screen metrics used to setup camera for full screen resolution
         val metrics = DisplayMetrics().also { viewFinder.display.getRealMetrics(it) }
         Log.d(TAG, "Screen metrics: ${metrics.widthPixels} x ${metrics.heightPixels}")
-
+        imageSizeWidth = viewFinder.width
+        imageSizeHeight = viewFinder.height
         val screenAspectRatio = aspectRatio(metrics.widthPixels, metrics.heightPixels)
         Log.d(TAG, "Preview aspect ratio: $screenAspectRatio")
 
@@ -326,11 +332,13 @@ class MainFragment : Fragment() {
 
         val cornerRadius = 25f
         // Set rect centered in frame
-        val rectTop = surfaceHeight * heightCropPercent / 2 / 100f
-        val rectLeft = surfaceWidth * widthCropPercent / 2 / 100f
-        val rectRight = surfaceWidth * (1 - widthCropPercent / 2 / 100f)
-        val rectBottom = surfaceHeight * (1 - heightCropPercent / 2 / 100f)
-        val rect = RectF(rectLeft, rectTop, rectRight, rectBottom)
+        rectTop = surfaceHeight * heightCropPercent / 2 / 100f
+        rectLeft = surfaceWidth * widthCropPercent / 2 / 100f
+        rectRight = surfaceWidth * (1 - widthCropPercent / 2 / 100f)
+        rectBottom = surfaceHeight * (1 - heightCropPercent / 2 / 100f)
+
+        Log.d("toans","$rectLeft  $surfaceWidth  $rectTop")
+        val rect = RectF(rectLeft!!, rectTop!!, rectRight!!, rectBottom!!)
         canvas.drawRoundRect(
             rect, cornerRadius, cornerRadius, rectPaint
         )
@@ -441,15 +449,18 @@ class MainFragment : Fragment() {
 
                 override fun onImageSaved(output: ImageCapture.OutputFileResults){
                     val msg = "Photo capture succeeded: ${output.savedUri}"
+                    Log.d("toantest","$rectTop  $rectLeft $rectRight $rectBottom")
                     Toast.makeText(context, msg, Toast.LENGTH_SHORT).show()
 //                    ivcapture.visibility = View.VISIBLE
 //                    Glide.with(requireContext()).load(output.savedUri).into(ivcapture)
-                    result = translatedText.text.toString()
+//                    result = translatedText.text.toString()
                     /// transaction to two fragment
+                    Log.d("toanrect","$rectLeft   $rectTop")
                     val transaction = requireActivity().supportFragmentManager.beginTransaction()
-                    transaction.replace(R.id.container, TwoFragment.newInstance(output.savedUri.toString(),result))
+                    transaction.replace(R.id.container, TwoFragment.newInstance(output.savedUri.toString(),
+                        rectLeft.toString(), rectTop.toString(), imageSizeHeight.toString(), imageSizeWidth.toString()))
                     transaction.commit()
-                    Log.d(TAG, msg)
+//                    Log.d(TAG, msg)
                 }
             }
         )
