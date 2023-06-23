@@ -29,6 +29,7 @@ import androidx.lifecycle.MutableLiveData
 import com.google.android.gms.tasks.Task
 import com.google.mlkit.codelab.translate.graphic.GraphicOverlay
 import com.google.mlkit.codelab.translate.graphic.TextGraphic
+import com.google.mlkit.codelab.translate.main.MainFragment
 import com.google.mlkit.codelab.translate.util.ImageUtils
 import com.google.mlkit.common.MlKitException
 import com.google.mlkit.vision.common.InputImage
@@ -44,7 +45,8 @@ class TextAnalyzer(
     private val context: Context,
     private val lifecycle: Lifecycle,
     private val result: MutableLiveData<String>,
-    private val imageCropPercentages: MutableLiveData<Pair<Int, Int>>
+    private val imageCropPercentages: MutableLiveData<Pair<Int, Int>>,
+    private var rect: Rect
 ) : ImageAnalysis.Analyzer {
 
     // TODO: Instantiate TextRecognition detector
@@ -102,6 +104,7 @@ class TextAnalyzer(
 
         val croppedBitmap =
             ImageUtils.rotateAndCrop(convertImageToBitmap, rotationDegrees, cropRect)
+        Log.d("toansize" , "${croppedBitmap.height}    ${croppedBitmap.width}")
         // TODO call recognizeText() once implemented
         recognizeText(InputImage.fromBitmap(croppedBitmap, 0)).addOnCompleteListener {
             imageProxy.close()
@@ -130,8 +133,10 @@ class TextAnalyzer(
     }
 
     private fun processTextRecognitionResult(texts: Text) {
+        Log.d("toanasasas" , "${texts.textBlocks.toString()}")
         val blocks = texts.textBlocks
         if (blocks.size == 0) {
+            graphic.clear()
             return
         }
         graphic.clear()
@@ -140,7 +145,7 @@ class TextAnalyzer(
             for (j in lines.indices) {
                 val elements = lines[j].elements
                 for (k in elements.indices) {
-                    val textGraphic: GraphicOverlay.Graphic = TextGraphic(graphic, elements[k])
+                    val textGraphic: GraphicOverlay.Graphic = TextGraphic(graphic, elements[k],rect)
                     graphic.add(textGraphic)
                 }
             }

@@ -3,6 +3,7 @@ package com.google.mlkit.codelab.translate.graphic
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.Rect
 import android.graphics.RectF
 import android.util.Log
 import com.google.mlkit.vision.text.Text
@@ -32,7 +33,8 @@ import java.util.Arrays
 // */
 class TextGraphic internal constructor(
     overlay: GraphicOverlay?,
-    private val element: Text.Element?
+    private val element: Text.Element?,
+    private val rect1: Rect
 ) :
     Graphic(overlay) {
     private val rectPaint: Paint = Paint()
@@ -78,11 +80,43 @@ class TextGraphic internal constructor(
         checkNotNull(element) { "Attempting to draw a null text." }
 
         // Draws the bounding box around the TextBlock.
+//        180.0 left  483.0 top     540.0 right  896.99994 bottom
+//        element.boundingBox!!.top += 500
+//        element.boundingBox!!.left += 200
+//        element.boundingBox!!.right += 540
+//        element.boundingBox!!.bottom += 896
         val rect = RectF(element.boundingBox)
-        canvas?.drawRect(rect, rectPaint)
-        textPaint.fontSpacing
+        rect.top += rect1.top + 30
+        rect.left += rect1.left + 30
+        rect.right += rect1.right + 30
+        rect.bottom += rect1.bottom + 30
+        Log.d("toanelement", "${element.boundingBox!!.top}")
+        ////////////////////////////////
+//        val x0 = translateX(rect.left)
+//        val x1 = translateX(rect.right)
+//        rect.left = min(x0, x1)
+//        rect.right = max(x0, x1)
+//        rect.top = translateY(rect.top)
+//        rect.bottom = translateY(rect.bottom)
+//        canvas!!.drawRect(rect, rectPaint)
+        val textWidth = textPaint.measureText(element.text)
+        val bound : Rect = Rect()
+        val texHeigh = textPaint.getTextBounds(element.text,0,element.text.length, bound)
+        canvas!!.drawRect(
+            rect.left ,
+            rect.top - TEXT_SIZE,
+            rect.left + textWidth,
+            rect.top + bound.height(),
+            rectPaint
+        )
         // Renders the text at the bottom of the box.
-        canvas?.drawText(element.text, rect.left, rect.bottom, textPaint)
+        canvas.drawText(element.text, rect.left, rect.top , textPaint)
+        ////////////////////////////////////////////
+//        canvas?.drawRect(rect, rectPaint)
+//        // Renders the text at the bottom of the box.
+//        canvas?.drawText(element.text, rect.left, rect.bottom, textPaint)
 
     }
+
+
 }

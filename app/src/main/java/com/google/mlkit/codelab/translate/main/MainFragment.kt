@@ -79,6 +79,7 @@ class MainFragment : Fragment() {
         const val DESIRED_HEIGHT_CROP_PERCENT = 70
         private var imageSizeWidth =  0
         private var imageSizeHeight =  0
+        private lateinit var rect1 : Rect
         // This is an arbitrary number we are using to keep tab of the permission
         // request. Where an app has multiple context for requesting permission,
         // this can help differentiate the different contexts
@@ -279,7 +280,8 @@ class MainFragment : Fragment() {
                         requireContext(),
                         lifecycle,
                         viewModel.sourceText,
-                        viewModel.imageCropPercentages
+                        viewModel.imageCropPercentages,
+                        rect1
                     )
                 )
             }
@@ -336,8 +338,8 @@ class MainFragment : Fragment() {
         rectLeft = surfaceWidth * widthCropPercent / 2 / 100f
         rectRight = surfaceWidth * (1 - widthCropPercent / 2 / 100f)
         rectBottom = surfaceHeight * (1 - heightCropPercent / 2 / 100f)
-
-        Log.d("toans","$rectLeft  $surfaceWidth  $rectTop")
+        rect1 = Rect(rectLeft!!.toInt(), rectTop!!.toInt(), rectRight!!.toInt(), rectBottom!!.toInt())
+        Log.d(TAG,"$rectLeft   $rectTop    $rectRight  $rectBottom" )
         val rect = RectF(rectLeft!!, rectTop!!, rectRight!!, rectBottom!!)
         canvas.drawRoundRect(
             rect, cornerRadius, cornerRadius, rectPaint

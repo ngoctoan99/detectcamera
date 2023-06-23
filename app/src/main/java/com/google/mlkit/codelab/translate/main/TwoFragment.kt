@@ -26,6 +26,7 @@ import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.google.mlkit.codelab.translate.R
 import com.google.mlkit.codelab.translate.R.*
+import kotlin.math.max
 
 
 private const val ARG_PARAM1 = "param1"
@@ -73,12 +74,13 @@ class TwoFragment : Fragment() {
 //        canvas.drawRect(rect, paint)
         val ratioHeight =  bitmap.height.toInt() / param4!!.toInt()
         val ratioWidth = bitmap.width.toInt()/ param5!!.toInt()
+        val ratio = max(ratioHeight,ratioWidth)
         Log.d("toanratio" , "$ratioHeight    $ratioWidth   $param4  $param5")
         val height= bitmap.height * 30 / 100
         val width = bitmap.width * 50 / 100
         Log.d("toanrect","${param2!!.toDouble().toInt() }   ${param3} $width   $height  ${bitmap.height.toInt()}  ${bitmap.width.toInt()}")
         val croppedBitmap =
-            Bitmap.createBitmap(bitmap, param2!!.toDouble().toInt() * ratioHeight - param2!!.toDouble().toInt() / 2, param3!!.toDouble().toInt()  * ratioWidth - param3!!.toDouble().toInt()  /2,width,height)
+            Bitmap.createBitmap(bitmap, param2!!.toDouble().toInt() * ratio, param3!!.toDouble().toInt() * ratio - param3!!.toDouble().toInt(),width,height)
         Glide.with(requireContext()).load(croppedBitmap).into(ivCapture)
         btnBack.setOnClickListener {
             requireActivity().supportFragmentManager.beginTransaction()

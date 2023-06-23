@@ -2,14 +2,10 @@ package com.google.mlkit.codelab.translate.graphic
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.SurfaceTexture
 import android.hardware.camera2.CameraCharacteristics
-import android.hardware.camera2.CameraManager
 import android.util.AttributeSet
 import android.view.View
-import androidx.core.content.ContextCompat.getSystemService
 import com.google.mlkit.codelab.translate.graphic.GraphicOverlay.Graphic
-
 
 
 /**
@@ -41,7 +37,7 @@ class GraphicOverlay(context: Context?, attrs: AttributeSet?) :
     private val lock = Any()
     private var previewWidth = 0
     private var widthScaleFactor = 1.0f
-    private var previewHeight = 0
+    private var previewHeight  = 0
     private var heightScaleFactor = 1.0f
     private var facing = CameraCharacteristics.LENS_FACING_BACK
     private val graphics: MutableSet<Graphic> = HashSet()
